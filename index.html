@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pizza Form</title>
+</head>
+<body>
+	<form action="post">
+	<div class="background">
+	<div class="transbox">
+	<h1>Pizza Menu</h1>
+	<fieldset>
+		<legend>Please select your size:</legend>
+		<input type="radio" id="small" name="size" value="small">
+		<label for="small">Small</label>
+		<input type="radio" id="medium" name="size" value="medium">
+		<label for="medium"> Medium</label>
+		<input type="radio" id="large" name="size" value="large">
+		<label for="large">Large</label>
+	</fieldset>
+	<br>
+	<fieldset>
+		<form>
+			<label for="base">Choose your base:</label>
+			<input list="bases" name="base" id="base">
+			<datalist id="bases">
+			  <option value="Thin and Crispy">
+			  <option value="Italian">
+			  <option value="Deep Pan">
+			  <option value="Stuffed Crust">
+			</datalist>
+		</form>
+	</fieldset>
+	<br>
+	<fieldset>
+		<legend>Please Choose your toppings (meat): </legend>
+		<input type="checkbox" id="chicken" name="chicken" value="chicken">Chicken
+		<input type="checkbox" id="salami" name="salami" value="salami">Salami
+		<input type="checkbox" id="chorizo" name="chorizo" value="chorizo">Chorizo
+		<input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">pepperoni
+	</fieldset>
+	<br>
+	<fieldset>
+		<legend>Please Choose your toppings (veggie): </legend>
+		<input type="checkbox" id="mushroom" name="mushroom" value="mushroom">Mushroom
+		<input type="checkbox" id="pepper" name="pepper" value="pepper">Pepper
+		<input type="checkbox" id="onion" name="onion" value="onion">Onion
+		<input type="checkbox" id="olives" name="olives" value="olives">Olives
+	</fieldset>
+	<br>
+	<fieldset>
+		<form name="allergies" id="allergies" value="allergies"></form>
+		<legend>Any allergies/dietary requirements?</legend>
+		<textarea name="allergies" id="allergies" cols="50" rows="5"></textarea>
+	</fieldset>
+	<a href="payment.html">Proceed To Payment</a>
+	</div>
+	</div>
+	</form>
+</body>
+</html>
